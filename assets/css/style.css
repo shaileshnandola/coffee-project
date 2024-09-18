@@ -1,0 +1,482 @@
+.bg-success {
+    background-color: #4d8b55 !important;
+}
+
+.text-success {
+    color: #4d8b55 !important;
+}
+
+.btn-success {
+    background-color: #4d8b55 !important;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 11px 0;
+}
+
+nav ul li a i {
+    border: 1px solid #4d8b55;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+nav ul li a i:hover {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #4d8b55 !important;
+}
+
+nav ul li .drop-down {
+    opacity: 0;
+    visibility: hidden;
+    top: 100px;
+    transition: 0.5s;
+}
+
+nav ul li:hover .drop-down {
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+    position: absolute;
+}
+
+.drop-down ul li:hover a {
+    background-color: #4d8b55 !important;
+    color: white !important;
+}
+
+
+/* banner start */
+.banner {
+    background-image: url('../img/slide_01-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    position: relative;
+    padding: 250px 0;
+    text-align: center;
+
+}
+
+.banner::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.441);
+}
+
+.banner .banner-content {
+    z-index: 2;
+}
+
+.banner .banner-content p {
+    font-family: 'poppins';
+    font-size: 17px;
+}
+
+
+.wrapper {
+  
+    width: 100%;
+    text-align: center;
+  }
+  
+ a button {
+    font-size: 15px;
+    background: #4D8B55;
+    color: #fff;
+    border: 0;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 20px;
+    width: 250px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+ a button:hover {
+    color: black;
+  }
+ a button::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+ a button[class^="slide"]::after {
+    transition: all 0.35s;
+  }
+ a button[class^="slide"]:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 0.35s;
+  }
+ a button.slide_from_bottom::after {
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+  }
+.banner-card {
+    background-color: black;
+    padding: 0 0 100px 0;
+}
+
+.banner-card .card {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.banner-card .card .card-img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+
+}
+
+.banner-card .card .card-img::before {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #1515159b;
+
+}
+
+.banner-card .card:hover .card-img {
+    transform: scale(1.2);
+    background-color: #151515a0;
+}
+
+.banner-card .card .card-content {
+    position: absolute;
+    content: '';
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    bottom: 20px;
+}
+
+/* banner end */
+
+/* kaffa start */
+.menu-list {
+    position: relative;
+    background-image: url(../img/menu_parallax.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+}
+
+.menu-list::before {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #1515158c;
+}
+
+.list {
+    background-image: url(../img/menu-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99;
+    margin-bottom: 100px;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 8px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+/* kaffa end */
+
+/* watch start */
+.watch {
+    background-color: #151515;
+    padding: 100px 0;
+}
+
+.watch .watch-content h2 {
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+}
+
+.watch .watch-content p {
+    font-size: 15px;
+    color: #ffffff8d;
+}
+
+/* watch end */
+
+/* contact start */
+.contact-us {
+    background-image: url('../img/black-bg.png');
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+
+}
+.contact-us::before {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/black-contact-girl-1.png');
+    background-repeat: no-repeat;
+    background-position: 25% center;
+    z-index: -1;
+    top: 10px;
+}
+
+
+.girl form {
+    background-image: url('../img/branch-bg.png');
+    background-color: #4d8b55;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 67% auto;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+    z-index: -1;
+    padding: 100px 50px 50px;
+}
+
+
+/* contact end */
+
+/* coffee mood */
+.coffee-mood {
+    background-image: url('../img/black-leaf.png');
+    background-repeat: no-repeat;
+    background-position: 30%;
+    padding: 100px 0;
+    background-color: #151515fe;
+    background-blend-mode: darken;
+}
+
+.coffee-content h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* coffee mood */
+
+/* quality-start */
+.quality {
+    background-color: #151515;
+    padding: 0 0 50px 0;
+
+}
+
+.quality .content {
+    background-color: #212121;
+    padding: 60px 15px;
+   
+
+}
+.quality .content img{
+    transition: 0.3s;
+}
+
+.quality .content img:hover {
+    transform: translateY(-10%);
+}
+
+.quality .content h6 {
+    color: white;
+    padding: 30px 0 0 0;
+    font-size: 24px;
+    font-family: 'poppins';
+    font-weight: 600;
+}
+
+.quality .content p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #9c9c9c;
+    padding: 10px;
+}
+
+/* quality-end */
+
+/* machines */
+.machines {
+    background-image: url('../img/leaves_pattern_010.png');
+    padding: 100px 50px 50px 50px;
+    margin: 0 60px;
+    background-color: #4d8b55;
+
+}
+
+.Machines-main {
+    background-color: #151515;
+
+}
+
+.offer {
+
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/black-label.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    top: 20px;
+    left: -20px;
+    align-items: center;
+    position: absolute;
+
+
+}
+
+/* machines */
+
+/* card */
+
+.cart {
+    background-color: #151515;
+    padding: 100px 0;
+    position: relative;
+}
+
+.product-image .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.479);
+    background-image: url('../img/product-black-02-480x682.jpg');
+    background-blend-mode: darken;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 0.5s;
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.product-image:hover .overlay {
+    transform: scaleX(1);
+    opacity: 1;
+
+}
+
+/* card */
+
+/* footer */
+.footer {
+    background-image: url('../img/footer-bg.jpg');
+    padding: 100px 0 0 0;
+    background-size: cover;
+    background-color: #15151596;
+    background-blend-mode: darken;
+}
+
+.footer-content h3 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-content h3::after {
+    margin-top: 4px;
+    border-bottom: 2px solid #4d8b55;
+    border-color: #4D8B55;
+    border-color: var(--main);
+    display: block;
+    content: "";
+    width: 170px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footer-content .our p:hover{
+    color: #4D8B55;
+}
+
+form input {
+    width: 100%;
+    height: 70px;
+    border-radius: 40px;
+    border: 0;
+
+}
+
+form button {
+    width: 150px;
+    height: 70px;
+    right: 0;
+    border-radius: 40px;
+    border: 0;
+    background-color: #4D8B55;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+form button:hover{
+   background-color: white;
+   color: #000;
+}
+.footer-content a i{
+    color: #4D8B55;
+    transition: 0.5s;
+}
+ .footer-content a i:hover{
+    color: white;
+}
+
+
+/* footer */
+
+@media (min-width:992px) {
+    .list {
+        background-size: contain;
+    }
+}
+@media screen and(max-width:992px) {
+    .contact-us::before{
+        width: 0;
+        height: 0;
+    }
+}
